@@ -12,8 +12,8 @@ def checkPrime(x):
 
 def primes(number_of_primes):
     list = []
-    x = 0
-    while len(list) <= number_of_primes+1:
+    x = 1
+    while len(list) <= number_of_primes:
         isPrime = checkPrime(x)
         if isPrime:
             list.append(x)
