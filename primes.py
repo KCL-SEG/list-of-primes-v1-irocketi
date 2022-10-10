@@ -12,12 +12,13 @@ def checkPrime(x):
 
 def primes(number_of_primes):
     list = []
-    x = 1
-    while len(list) <= number_of_primes:
+    x = 2
+    while len(list) < number_of_primes:
         isPrime = checkPrime(x)
         if isPrime:
             list.append(x)
         x += 1
+    print (list)
     return list
 
 primes(10)
